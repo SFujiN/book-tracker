@@ -11,10 +11,16 @@ function Book (title, author, pages, read) {
   }
 }
 
-function addBookToLibrary() {
-
-  // do stuff here
-  return;
+/* function to add book to the myLibrary array
+ * title: string
+ * author: string
+ * pages: int
+ * read: boolean
+ * return: void
+ */
+function addBookToLibrary(title, author, pages, read) {
+  let entry = new Book(title, author, pages, read);
+  myLibrary.push(entry);
 }
 
 function displayLibrary(library) {
